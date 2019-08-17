@@ -6,7 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AsideComponent } from './aside/aside.component';
-import { ContentComponent } from './content/content.component';
+import { MainLayoutComponent } from './main-layout/main-layout.component';
+import { CoursesComponent } from './courses/courses.component';
+import { MySkillsComponent } from './my-skills/my-skills.component';
+import { LoginComponent } from './login/login.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { ExamplesComponent } from './examples/examples.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { HomeComponent } from './home/home.component';
+import { MainLayoutModule } from './main-layout/main-layout.module';
 
 @NgModule({
   declarations: [
@@ -14,11 +22,19 @@ import { ContentComponent } from './content/content.component';
     HeaderComponent,
     FooterComponent,
     AsideComponent,
-    ContentComponent
+    MainLayoutComponent,
+    CoursesComponent,
+    MySkillsComponent,
+    LoginComponent,
+    ContactsComponent,
+    ExamplesComponent,
+    NotFoundComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MainLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
