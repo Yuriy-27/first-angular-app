@@ -7,6 +7,10 @@ import { CoursesComponent } from '../courses/courses.component';
 import { MySkillsComponent } from '../my-skills/my-skills.component';
 import { ExamplesComponent } from '../examples/examples.component';
 import { ContactsComponent } from '../contacts/contacts.component';
+import { HeaderComponent } from '../header/header.component';
+import { AsideComponent } from '../aside/aside.component';
+import { FooterComponent } from '../footer/footer.component';
+import { NotFoundComponent } from '../not-found/not-found.component';
 
 
 @NgModule({
@@ -16,7 +20,11 @@ import { ContactsComponent } from '../contacts/contacts.component';
     CoursesComponent,
     MySkillsComponent,
     ExamplesComponent,
-    ContactsComponent
+    ContactsComponent,
+    HeaderComponent,
+    AsideComponent,
+    FooterComponent,
+    NotFoundComponent
   ],
   imports: [
     CommonModule,

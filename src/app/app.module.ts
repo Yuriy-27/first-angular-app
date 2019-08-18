@@ -19,17 +19,7 @@ import { MainLayoutModule } from './main-layout/main-layout.module';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    AsideComponent,
-    MainLayoutComponent,
-    CoursesComponent,
-    MySkillsComponent,
-    LoginComponent,
-    ContactsComponent,
-    ExamplesComponent,
-    NotFoundComponent,
-    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
