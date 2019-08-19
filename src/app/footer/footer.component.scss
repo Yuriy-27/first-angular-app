@@ -1,4 +1,6 @@
+@import "src/assets/styles/variables.scss";
+
 footer{
-    background: blanchedalmond;
-    height: 200px;
+    background-color: blanchedalmond;
+    height: $footer-height;
 }

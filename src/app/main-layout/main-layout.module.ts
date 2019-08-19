@@ -11,16 +11,16 @@ import { HeaderComponent } from '../header/header.component';
 import { AsideComponent } from '../aside/aside.component';
 import { FooterComponent } from '../footer/footer.component';
 import { NotFoundComponent } from '../not-found/not-found.component';
+import { MySkillsModule } from '../my-skills/my-skills.module';
+import { CoursesModule } from '../courses/courses.module';
+import { ExamplesModule } from '../examples/examples.module';
+import { ContactsModule } from '../contacts/contacts.module';
 
 
 @NgModule({
   declarations: [
     MainLayoutComponent,
     HomeComponent,
-    CoursesComponent,
-    MySkillsComponent,
-    ExamplesComponent,
-    ContactsComponent,
     HeaderComponent,
     AsideComponent,
     FooterComponent,
@@ -28,7 +28,11 @@ import { NotFoundComponent } from '../not-found/not-found.component';
   ],
   imports: [
     CommonModule,
-    MainLayoutRoutingModule
+    MainLayoutRoutingModule,
+    MySkillsModule,
+    CoursesModule,
+    ExamplesModule,
+    ContactsModule
   ]
 })
 export class MainLayoutModule { }

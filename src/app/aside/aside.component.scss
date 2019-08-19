@@ -1,10 +1,13 @@
+@import "src/assets/styles/variables.scss";
+
 aside{
     background: honeydew;
-    height: 400px;
+    height: calc(100vh - #{$header-height} - #{$footer-height});
+    overflow-y: auto;
 }
 
 .active{
-    background: rgb(122, 230, 188);
+    background-color: bisque;
 }
 ul{
     margin: 0;
