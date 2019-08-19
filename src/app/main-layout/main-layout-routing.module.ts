@@ -14,10 +14,10 @@ const routes: Routes = [
     path: '', component: MainLayoutComponent, children: [
       {path: '', redirectTo: 'home', pathMatch: 'full'},
       {path: 'home', component: HomeComponent},
-      {path: 'skills', component: MySkillsComponent},
-      {path: 'education', component: CoursesComponent},
-      {path: 'examples', component: ExamplesComponent},
-      {path: 'contacts', component: ContactsComponent}
+      {path: 'skills', loadChildren: 'src/app/my-skills/my-skills.module#MySkillsModule'},
+      {path: 'education', loadChildren: 'src/app/courses/courses.module#CoursesModule'},
+      {path: 'examples', loadChildren: 'src/app/examples/examples.module#ExamplesModule'},
+      {path: 'contacts', loadChildren: 'src/app/contacts/contacts.module#ContactsModule'}
     ]
   },
   {path: '**', component: NotFoundComponent}
