@@ -28,11 +28,7 @@ import { ContactsModule } from '../contacts/contacts.module';
   ],
   imports: [
     CommonModule,
-    MainLayoutRoutingModule,
-    MySkillsModule,
-    CoursesModule,
-    ExamplesModule,
-    ContactsModule
+    MainLayoutRoutingModule
   ]
 })
 export class MainLayoutModule { }
