@@ -4,7 +4,7 @@
             <h3>My courses</h3>
             <div class='flex mb-5' *ngFor="let item of coursesList">
                 <div class='flex__image' [style.background-image]="'url(' + item.img + ')'"></div>
-                <div class='flex-direction'>
+                <div>
                     <h5>{{item.name}}</h5>
                     <p class='cut'>{{item.description}}</p>
                     <ul>
@@ -14,7 +14,7 @@
                 <a [routerLink]='["/courses", item.id]' class="btn btn-primary mb-3">Learn more...</a>
             </div>
         </div>
-        <div class="col-8">
+        <div class="courses-details col-8">
             <router-outlet></router-outlet>
         </div>
     </div>
