@@ -1,22 +1,20 @@
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-4">
-            <p>Courses works!</p>
-            <div class="links">
-                <nav>
+    <div class="courses-content row">
+        <div class="courses-list col-4">
+            <h3>My courses</h3>
+            <div class='flex mb-5' *ngFor="let item of coursesList">
+                <div class='flex__image' [style.background-image]="'url(' + item.img + ')'"></div>
+                <div class='flex-direction'>
+                    <h5>{{item.name}}</h5>
+                    <p class='cut'>{{item.description}}</p>
                     <ul>
-                        <li><a href="">HTML5 & CSS3 Starter</a></li>
-                        <li><a href="">Javascript Essential</a></li>
-                        <li><a href="">Javascript Advanced</a></li>
-                        <li><a href="">Bootstrap 4</a></li>
-                        <li><a href="">HTML3 & CSS3 Advanced</a></li>
-                        <li><a href="">Typescript Fundamentals</a></li>
-                        <li><a href="">Angular Essential</a></li>
+                        <li>{{item.lessons.length}} lessons</li>
                     </ul>
-                </nav>
+                </div>
+                <a [routerLink]='["/courses", item.id]' class="btn btn-primary mb-3">Learn more...</a>
             </div>
         </div>
-        <div class="col">
+        <div class="col-8">
             <router-outlet></router-outlet>
         </div>
     </div>

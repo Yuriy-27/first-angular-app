@@ -1,16 +1,13 @@
 @import "src/assets/styles/variables.scss";
 
-.row{
-    height: calc(100vh - #{$header-height});
-}
 
-.col-4{
+.courses-list{
     background-color: azure;
-    .links{
-        overflow-y: auto;
-    }
+    overflow-y: auto;
+    height: calc(100vh - #{$header-height});
+
 }
 
-.col{
+.col-8{
     background-color: blanchedalmond;
 }

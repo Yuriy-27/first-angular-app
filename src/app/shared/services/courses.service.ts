@@ -1,0 +1,116 @@
+import { Injectable } from '@angular/core';
+
+export interface Courses {
+  id: number;
+  name: string;
+  description: string;
+  lessons: Array<string>;
+  img: string;
+}
+
+@Injectable({
+  providedIn: 'root'
+})
+export class CoursesService {
+  private courses: Courses[] = [
+    {id: 1,
+      name: 'HTML5 и CSS3 Starter',
+      // tslint:disable-next-line:max-line-length
+      description: 'The course consists of eight logically interconnected lessons, in which the learner will get acquainted with the HTML markup language, learn how to create a html page. Familiarizes with Cascading Style Sheets - CSS for web page design.',
+      lessons: [
+        'Introduction to HTML5',
+        'Work with images, tables and lists',
+        'Cascading CSS3 Style Sheets Part 1',
+        'Cascading CSS3 Style Sheets Part 2',
+        'Positioning elements. Types of layout.',
+        'HTML5 semantics. New tags. ',
+        'Forms. Meta Tags.',
+        'Page layout. Practice'],
+      img: 'src/assets/images/html5_css3_starter.png'},
+    {id: 2,
+      name: 'JavaScript Essential',
+      // tslint:disable-next-line:max-line-length
+      description: 'This video course contains a set of video lessons that will help novice developers to understand JavaScript from scratch. During the course, the work will be considered with the conditions and cycles, also the coach will tell you about the implementation of classes and objects that help you understand the basics of object-oriented programming.',
+      lessons: [
+        'Introduction to JavaScript',
+        'Logical structures',
+        'Arrays',
+        'Functions',
+        'Objects',
+        'Practice',
+        'Practice'],
+      img: 'src/assets/images/js_essential.jpg'},
+    {id: 3,
+      name: 'JavaScript Advanced',
+      // tslint:disable-next-line:max-line-length
+      description: 'You will learn how to work with objects, create constructor functions, work with the DOM tree of a page, and process events of document elements. This video course will help you to move to the new level of ownership of the most common scripting programming language.',
+      lessons: [
+        'Constructors and prototypes',
+        'Work with documents',
+        'Window. Regular Expressions',
+        'CSS and JavaScript',
+        'Events and event processing (Part 1)',
+        'Events and event processing (Part 2)',
+        'Forms and elements of forms',
+        'Cookies and data storage mechanisms on the client',
+        'Work with graphics on the client side',
+        'Ajax and work with HTTP protocols'],
+      img: 'src/assets/images/js_advanced.jpg'},
+    {id: 4,
+      name: 'Bootstrap 4',
+      // tslint:disable-next-line:max-line-length
+      description: 'Bootstrap 4 is an HTML, CSS, JS framework for crossbrowser web-based interfaces development. Bootstrap presents a toolkit from Twitter designed to facilitate the development of web applications and websites, uses CSS and HTML for printing, forms, buttons, tables, grids, navigation, etc., as well as additional JavaScript extensions that simplify the work of the web developer.',
+      lessons: [
+        'Introducing Bootstrap 4',
+        'Typography Bootstrap 4',
+        'Bootstrap 4 Components',
+        'JavaScript Bootstrap 4',
+        'Utilities Bootstrap 4'],
+      img: 'src/assets/images/bootstrap4.png'},
+    {id: 5,
+      name: 'HTML5 & CSS3 Advanced',
+      // tslint:disable-next-line:max-line-length
+      description: 'The course consists of 7 lessons, where students can familiarize themselves with the new features of HTML5 & CSS3. Students will consider the use of flexible layout, implementation of animation, use of browser vaults and multithreading, as well as connecting preprocessor and assembler to display the cross-browser of a web page on various devices.',
+      lessons: [
+        'Introduction, microdata and user data. Geolocation',
+        'Canvas',
+        'Client side data storage. Audio, Video',
+        'Layout building principles, Flex, Grid, Site templates',
+        'Animations and gradients',
+        'SASS basics',
+        'Practice'],
+      img: 'src/assets/images/html5_css3_advanced.png'},
+    {id: 6,
+      name: 'TypeScript Fundamentals',
+      // tslint:disable-next-line:max-line-length
+      description: 'You will learn how to work with objects, create constructor functions, work with the DOM tree of a page, and process events of document elements. This video course will help you to move to the new level of ownership of the most common scripting programming language.',
+    lessons: [
+      'Variables and Functions',
+      'Classes and Interfaces',
+      'Generics',
+      'Modules and Namespaces',
+      'Practice'],
+      img: 'src/assets/images/typescript.png'},
+    {id: 7,
+      name: 'Angular Essential',
+      // tslint:disable-next-line:max-line-length
+      description: 'The Angular Essential video course is designed for studying Angular, which is a redesigned and improved version of the popular AngularJS framework.',
+      lessons: [
+        'Introduction',
+        'Components',
+        'Directives',
+        'Services',
+        'Routing',
+        'Forms',
+        'HTTP'],
+      img: 'src/assets/images/angular.png'},
+    ];
+
+  getAll(): Courses[] {
+    return this.courses;
+  }
+
+  getOne(id: number): Courses {
+    return this.courses.find((elem) => elem.id === id);
+  }
+}
