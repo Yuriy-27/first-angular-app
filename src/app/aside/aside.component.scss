@@ -1,14 +1,27 @@
 @import "src/assets/styles/variables.scss";
 
 aside{
-    background: honeydew;
+    background-color: $tundora-color;
     height: calc(100vh - #{$header-height} - #{$footer-height});
     overflow-y: auto;
 }
 
-.active{
-    background-color: bisque;
+.sidebar{
+    padding: 0;
+    
 }
-ul{
-    margin: 0;
+
+.nav{
+    li{
+        a{
+            padding-left: 15px;
+            color: $malibu-color;
+            &:hover,
+            &.active {
+                background-color: $azure-radiance-color;
+                color: $white-color;
+            }
+        }
+        
+    }
 }

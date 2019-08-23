@@ -2,9 +2,10 @@
 
 header{
     padding: 30px;
-    background-color: #ddd;
+    background-color: $mine-shaft-color;
     text-align: center;
     height: $header-height;
+    color: $alto-color;
     
     h1{
         text-transform: uppercase;
