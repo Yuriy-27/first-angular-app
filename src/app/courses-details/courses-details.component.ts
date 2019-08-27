@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Courses, CoursesService } from '../shared/services/courses.service';
 import { Router, ActivatedRoute } from '@angular/router';
-import { Subscription } from 'rxjs';
 import { SubscriptionsManager } from '../shared/base/subscriptions-manager';
 
 @Component({
