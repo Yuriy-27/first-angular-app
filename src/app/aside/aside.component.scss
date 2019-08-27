@@ -11,17 +11,13 @@ aside{
     
 }
 
-.nav{
-    li{
-        a{
-            padding-left: 15px;
-            color: $malibu-color;
-            &:hover,
-            &.active {
-                background-color: $azure-radiance-color;
-                color: $white-color;
-            }
-        }
-        
+.nav li a{
+   
+    padding-left: 15px;
+    color: $malibu-color;
+    &:hover,
+    &.active {
+        background-color: $azure-radiance-color;
+        color: $white-color;
     }
 }
