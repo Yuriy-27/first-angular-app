@@ -1,6 +1,4 @@
 @import '../../assets/styles/variables';
-// @import '../../assets/styles/main';
-
 
 aside{
     background-color: $tundora-color;
@@ -22,6 +20,12 @@ aside{
         background-color: $azure-radiance-color;
         color: $white-color;
     }  
+}
+
+.icon{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
 }
 
 
