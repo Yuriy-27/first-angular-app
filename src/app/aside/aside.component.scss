@@ -1,4 +1,6 @@
-@import "src/assets/styles/variables.scss";
+@import '../../assets/styles/variables';
+// @import '../../assets/styles/main';
+
 
 aside{
     background-color: $tundora-color;
@@ -19,9 +21,8 @@ aside{
     &.active {
         background-color: $azure-radiance-color;
         color: $white-color;
-    }
-    
+    }  
 }
- img{
-     margin-right: 10px;
- }
+
+
+
