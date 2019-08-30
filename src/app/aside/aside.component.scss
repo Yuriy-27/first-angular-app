@@ -1,20 +1,19 @@
 @import '../../assets/styles/variables';
 
-aside{
+.sidebar{
+    padding: 0;
     background-color: $tundora-color;
     height: calc(100vh - #{$header-height} - #{$footer-height});
     overflow-y: auto;
-}
-
-.sidebar{
-    padding: 0;
     
 }
 
 .nav li a{
    
-    padding-left: 15px;
+    padding-left: 24px;
+    margin-bottom: 1px;
     color: $malibu-color;
+    font-size: $font-size-md;
     &:hover,
     &.active {
         background-color: $azure-radiance-color;
@@ -24,7 +23,6 @@ aside{
 
 .icon{
     width: 18px;
-    height: 18px;
     margin-right: 10px;
 }
 
