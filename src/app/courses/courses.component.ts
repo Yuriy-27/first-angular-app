@@ -16,6 +16,7 @@ export class CoursesComponent extends SubscriptionsManager implements OnInit {
     super();
   }
 
+
   ngOnInit() {
     this.coursesList = this.coursesService.getAll();
 

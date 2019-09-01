@@ -1,7 +1,25 @@
-@import "src/assets/styles/variables.scss";
+@import "src/assets/styles/variables";
 
 footer{
     background-color:$tundora-color;
     height: $footer-height;
-    color: $alto-color;
+    
+    p{
+        margin: 0;
+        font-size: $font-size-sm;
+        text-align: center;
+        color: $alto-color;
+    }
+    .links{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        justify-content: space-between;
+        height: 50px;
+        padding: 20px;
+        i {
+            font-size: $font-size-md;
+            color: $malibu-color;
+        }
+    }
 }
