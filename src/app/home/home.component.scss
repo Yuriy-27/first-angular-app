@@ -1,0 +1,14 @@
+@import '../../assets/styles/variables';
+
+.home {
+  height: calc(100vh - #{$header-height});
+  overflow-y: auto;
+  background-color: $alto-color;
+
+  .photo {
+    height: 500px;
+    margin-top: 90px;
+  }
+
+
+}
