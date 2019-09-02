@@ -1,14 +1,27 @@
 @import "src/assets/styles/variables";
 
-.header-context{
-    padding: 24px;
-    background-color: $mine-shaft-color;
-    height: $header-height;
-    .ng{
-        color: $alto-color;
-        font-size: $font-size-xl;
-    }
-    .first{
-        margin-right: 10px;
-    }
+.header-context {
+  padding: 24px;
+  background-color: $mine-shaft-color;
+  height: $header-height;
+  font-weight: 700;
+
+  .ng {
+    color: $alto-color;
+    font-size: $font-size-xl;
+  }
+
+  .first {
+    margin-right: 10px;
+  }
+
+  .menu {
+    color: #ddd;
+  }
+
+  .menu-button {
+    height: 40px;
+  }
+
+
 }
