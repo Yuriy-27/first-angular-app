@@ -1,30 +1,28 @@
 @import '../../assets/styles/variables';
 
-.sidebar{
-    padding: 0;
-    background-color: $tundora-color;
-    height: calc(100vh - #{$header-height} - #{$footer-height});
-    overflow-y: auto;
-    
+.sidebar {
+  padding: 0;
+  background-color: $tundora-color;
+  height: calc(100vh - #{$header-height} - #{$footer-height});
+  overflow-y: auto;
+
 }
 
-.nav li a{
-   
-    padding-left: 24px;
-    margin-bottom: 1px;
-    color: $malibu-color;
-    font-size: $font-size-md;
-    &:hover,
-    &.active {
-        background-color: $azure-radiance-color;
-        color: $white-color;
-    }  
+.nav li a {
+
+  padding-left: 24px;
+  margin-bottom: 1px;
+  color: $malibu-color;
+  font-size: $font-size-md;
+
+  &:hover,
+  &.active {
+    background-color: $azure-radiance-color;
+    color: $white-color;
+  }
 }
 
-.icon{
-    width: 18px;
-    margin-right: 10px;
+.icon {
+  width: 18px;
+  margin-right: 10px;
 }
-
-
-
