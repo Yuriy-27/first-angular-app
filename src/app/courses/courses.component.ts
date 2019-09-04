@@ -1,12 +1,12 @@
-import { Component, OnInit } from "@angular/core";
-import { Courses, CoursesService } from "../shared/services/courses.service";
-import { ActivatedRoute, Router, NavigationEnd } from "@angular/router";
-import { SubscriptionsManager } from "../shared/base/subscriptions-manager";
+import { Component, OnInit } from '@angular/core';
+import { Courses, CoursesService } from '../shared/services/courses.service';
+import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
+import { SubscriptionsManager } from '../shared/base/subscriptions-manager';
 
 @Component({
-  selector: "app-courses",
-  templateUrl: "./courses.component.html",
-  styleUrls: ["./courses.component.scss"]
+  selector: 'app-courses',
+  templateUrl: './courses.component.html',
+  styleUrls: ['./courses.component.scss']
 })
 export class CoursesComponent extends SubscriptionsManager implements OnInit {
   coursesList: Courses[];
@@ -24,8 +24,7 @@ export class CoursesComponent extends SubscriptionsManager implements OnInit {
 
     this.subs = this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        this.courseSelected = !!(this.route.firstChild.snapshot.params
-          .id as string);
+        this.courseSelected = !!(this.route.firstChild.snapshot.params.id as string);
       }
     });
   }
