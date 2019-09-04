@@ -1,12 +1,56 @@
 <div class="header-context container-fluid">
-    <div class="row no-gutters">
-       <div class="col-3 d-flex">
-            <p class="ng first">My first</p>
-            <div class="logo">
-                <img src="../../favicon.ico" alt=""> 
-            </div>
-            <p class="ng">ngular Application</p>
-        </div>
+  <div class="row no-gutters">
+    <div class="header-title col d-flex">
+      <p class="ng first">My first</p>
+      <div class="logo">
+        <img src="../../favicon.ico" alt="">
+      </div>
+      <p class="ng">ngular Application</p>
     </div>
+    <div class="navigation col d-flex">
+      <div class="links col">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/yuriyshchebetun/" class="badge">
+              <i class="link fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/Yuriy-27" class="badge">
+              <i class="link fab fa-github"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://t.me/YuriyShchebetun" class="badge">
+              <i class="link fab fa-telegram-plane"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="skype:yuriyshchebetun?userinfo" class="badge">
+              <i class="link fab fa-skype"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-button btn-group" dropdown>
+        <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+          <i class="fas fa-bars"></i> <span class="caret"></span>
+        </button>
+        <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
+          <li role="menuitem"><a class="dropdown-item" routerLink="/home" routerLinkActive='active'
+              [routerLinkActiveOptions]='{exact: true}'>Home</a></li>
+          <li role="menuitem"><a class="dropdown-item" routerLink="/skills" routerLinkActive='active'>Skills</a></li>
+          <li role="menuitem"><a class="dropdown-item" routerLink="/courses" routerLinkActive='active'>Education</a>
+          </li>
+          <li role="menuitem"><a class="dropdown-item" routerLink="/examples" routerLinkActive='active'>Examples</a>
+          </li>
+          <li role="menuitem"><a class="dropdown-item" routerLink="/contacts" routerLinkActive='active'>Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="menu">
+        <i class="fas fa-bars"></i>
+      </div> -->
+    </div>
+  </div>
 </div>
-

@@ -1,14 +1,44 @@
 @import "src/assets/styles/variables";
 
-.header-context{
-    padding: 24px;
-    background-color: $mine-shaft-color;
-    height: $header-height;
-    .ng{
-        color: $alto-color;
-        font-size: $font-size-xl;
+.header-context {
+  padding: 24px;
+  background-color: $mine-shaft-color;
+  height: $header-height;
+  font-weight: 700;
+
+  .ng {
+    color: $alto-color;
+    font-size: $font-size-xl;
+  }
+
+  .first {
+    margin-right: 10px;
+  }
+
+  .menu {
+    color: #ddd;
+  }
+
+  .menu-button {
+    height: 32px;
+
+    .btn {
+      height: 32px;
+      padding: 5px;
+
+      i {
+        width: 16px;
+      }
     }
-    .first{
-        margin-right: 10px;
-    }
+  }
+
+  .links {
+    padding-top: 5px;
+  }
+
+  .link {
+    font-size: $font-size-regular;
+  }
+
+
 }
