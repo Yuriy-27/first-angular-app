@@ -1,1 +1,13 @@
 <p>contacts works!</p>
+<div *ngFor='let item of contacts' class="container d-flex">
+    <div class="left">
+        <i [ngClass]="item.class"></i>
+       
+        {{item.title}}
+
+    </div>
+    <div class="right">
+        {{item.content}}
+
+    </div>
+</div>
