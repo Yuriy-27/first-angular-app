@@ -1,13 +1,25 @@
-<p>contacts works!</p>
-<div *ngFor='let item of contacts' class="container d-flex">
-    <div class="left">
-        <i [ngClass]="item.class"></i>
-       
-        {{item.title}}
-
+<div class="contacts-content container-fluid row">
+    <div class="contacts-title container col-3 d-flex ">
+        <div class="icon">
+            <i class="fas fa-id-card-alt"></i>
+        </div>
+        <div class="title">
+            <p>My contact details</p>
+        </div> 
     </div>
-    <div class="right">
-        {{item.content}}
-
-    </div>
+    <div class="col">
+        <div *ngFor='let item of contacts' class="main-content container col d-flex">
+            <div class="left col-4 d-flex">
+                <div>
+                    <i [ngClass]="item.class"></i>
+                </div>
+                <div class="name">
+                    <p>{{item.title}}</p>
+                </div>
+            </div>
+            <div class="right col-8">
+                {{item.content}}
+            </div>
+        </div>
+    </div>   
 </div>

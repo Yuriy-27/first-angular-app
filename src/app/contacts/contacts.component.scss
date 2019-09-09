@@ -1,1 +1,20 @@
 @import '../../assets/styles/variables.scss';
+
+
+.contacts-content{
+    background-color: $alto-color;
+    height: calc(100vh - #{$header-height});
+    margin: 0;
+    .contacts-title{
+        font-size: $font-size-xxxl;
+        
+        .title{
+            font-weight: 700;
+        }
+    }
+    .line{
+        height: 3px;
+        background-color: $azure-radiance-color;
+    }
+}
+
