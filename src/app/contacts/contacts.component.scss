@@ -5,16 +5,27 @@
     background-color: $alto-color;
     height: calc(100vh - #{$header-height});
     margin: 0;
-    .contacts-title{
+    .title-content{
         font-size: $font-size-xxxl;
+        border: 1px solid red;
+        
+        .contacts-title{
+            // border: 1px solid red;
+            height: 70px;
+            padding:10px;
+        }
         
         .title{
             font-weight: 700;
         }
     }
-    .line{
-        height: 3px;
-        background-color: $azure-radiance-color;
+    .left{
+        // border: 1px solid red;
+        height: 70px;
+    }
+    .main-info{
+        border: 1px solid red;
+        font-size: $font-size-xxl;
     }
 }
 
