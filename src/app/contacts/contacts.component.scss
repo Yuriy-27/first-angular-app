@@ -8,7 +8,7 @@
     overflow-y: auto;
     .title-content{
         font-size: $font-size-xxxl;
-        margin-top: 50px;
+        margin-top: 90px;
         
         .title{
             font-weight: 800;
@@ -28,12 +28,12 @@
     
     .main-info{
         font-size: $font-size-xxl;
-        margin-top: 50px;
+        margin-top: 90px;
        
         .main-content{
             padding: 0;
             .left, .right{
-                margin-bottom: 40px;
+                margin-bottom: 20px;
                 padding: 0;
                 border: 2px solid $azure-radiance-color;
                 border-radius: 10px;
