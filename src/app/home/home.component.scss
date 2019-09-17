@@ -19,7 +19,7 @@
 
     .line {
       width: 80px;
-      height: 5px;
+      height: 3px;
       background-color: $azure-radiance-color;
     }
 
@@ -29,12 +29,12 @@
       font-weight: 500;
 
       span {
-        font-weight: 900;
+        font-weight: 800;
       }
     }
 
     h2 {
-      font-weight: 900;
+      font-weight: 800;
       font-size: $font-size-xxxl;
       margin-bottom: 1rem;
       span {

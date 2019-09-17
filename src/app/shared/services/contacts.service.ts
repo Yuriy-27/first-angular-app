@@ -18,7 +18,7 @@ export class ContactsService {
     },
     {
       class: 'fas fa-phone-square',
-      title: 'Phone number',
+      title: 'Phone',
       content: '+38 (093) 722-34-61'
     },
     {

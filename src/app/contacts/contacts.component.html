@@ -1,21 +1,19 @@
 <div class="contacts-content container-fluid row justify-content-center">
     <div class="title-content col-3 d-flex">
-        <div class="contacts-title d-flex">
-            <div class="icon">
-                <i class="fas fa-id-card-alt"></i>
-            </div>
+        <div class="contacts-title">
+            <div class="line"></div>
             <div class="title">
-                <p>My contact details:</p>
+                <p><span>My</span> Contact Details</p>
             </div> 
         </div>
     </div>
     <div class="main-info col-7">
-        <div *ngFor='let item of contacts' class="main-content col d-flex">
-            <div class="left col-4 d-flex">
-                <div>
+        <div *ngFor='let item of contacts' class="main-content col d-flex justify-content-between">
+            <div class="left col-3 d-flex">
+                <div class="icon col-2">
                     <i [ngClass]="item.class"></i>
                 </div>
-                <div class="name">
+                <div class="name col-10">
                     <p>{{item.title}}</p>
                 </div>
             </div>
