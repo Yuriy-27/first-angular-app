@@ -2,9 +2,20 @@
 
 
 .courses-list{
-    background-color: azure;
+    background-color: $alto-color;
     overflow-y: auto;
     height: calc(100vh - #{$header-height});
+    .line {
+        width: 40px;
+        height: 3px;
+        background-color: $azure-radiance-color;
+    }
+    h1 {
+        font-size: $font-size-xxxl;
+        span {
+            font-weight: 800;
+        }
+    }
 
 }
 
@@ -14,9 +25,14 @@
     overflow-y: auto;
 }
 
-.flex__image {
-    background-size: contain;
+.image {
+    background-size: cover;
     background-position: center center;
-    width: 100px;
-    height: 50px;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+}
+
+.invisible {
+    display: none;
 }

@@ -1,17 +1,18 @@
 <div class="container-fluid">
     <div class="courses-content row">
         <div class="courses-list" [ngClass]="{'col-4': courseSelected, 'col-12': !courseSelected}">
-            <h3>My courses</h3>
-            <div class='flex mb-5' *ngFor="let item of coursesList">
-                <div class='flex__image' [style.background-image]="'url(' + item.img + ')'"></div>
-                <div>
-                    <h5>{{item.name}}</h5>
-                    <p class='cut'>{{item.description}}</p>
-                    <ul>
-                        <li>{{item.lessons.length}} lessons</li>
-                    </ul>
+            <div class="line mt-3 mb-2"></div>
+            <h1>My <span>Courses</span></h1>
+            <div *ngFor="let item of coursesList">
+                <div class="media" >
+                    <div class='image mt-3 mr-3' [style.background-image]="'url(' + item.img + ')'"></div>
+                    <div class="media-body mt-3">
+                        <h5 class="mt-0">{{item.name}}</h5>
+                        <p [ngClass]="{'d-none': courseSelected}">{{item.description}}</p>
+                         <a [routerLink]='["/courses", item.id]' class="btn btn-primary">Learn more...</a>    
+                    </div>  
                 </div>
-                <a [routerLink]='["/courses", item.id]' class="btn btn-primary mb-3">Learn more...</a>
+                <hr>
             </div>
         </div>
         <div *ngIf="courseSelected" class="courses-details col-8">
