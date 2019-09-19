@@ -16,22 +16,36 @@
             font-weight: 800;
         }
     }
+    .image {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 100px;
+    }
+    .description {
+        text-align: justify;
+    }
+    .nav-btn{
+        border: 1px solid $azure-radiance-color;
+        border-radius: 5px;
+        color: $azure-radiance-color;
+        &:hover,
+        &.active {
+          background-color: $azure-radiance-color;
+          color: $white-color;
+        }
+    }
 
 }
 
 .courses-details{
-    background-color: blanchedalmond;
+    background-color: $mercury-color;
     height: calc(100vh - #{$header-height});
     overflow-y: auto;
 }
 
-.image {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 100px;
-}
+
 
 .invisible {
     display: none;

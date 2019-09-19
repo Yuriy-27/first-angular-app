@@ -14,9 +14,9 @@ export interface Courses {
 export class CoursesService {
   private courses: Courses[] = [
     {id: 1,
-      name: 'HTML5 и CSS3 Starter',
+      name: 'HTML5 & CSS3 Starter',
       // tslint:disable-next-line:max-line-length
-      description: 'The course consists of eight logically interconnected lessons, in which the learner will get acquainted with the HTML markup language, learn how to create a html page. Familiarizes with Cascading Style Sheets - CSS for web page design.',
+      description: 'The course consists of eight logically interconnected lessons, in which the learner will get acquainted with the HTML markup language, learn how to create an HTML page. Familiarizes with Cascading Style Sheets - CSS for web page design.',
       lessons: [
         'Introduction to HTML5',
         'Work with images, tables and lists',
@@ -30,7 +30,7 @@ export class CoursesService {
     {id: 2,
       name: 'JavaScript Essential',
       // tslint:disable-next-line:max-line-length
-      description: 'This video course contains a set of video lessons that will help novice developers to understand JavaScript from scratch. During the course, the work will be considered with the conditions and cycles, also the coach will tell you about the implementation of classes and objects that help you understand the basics of object-oriented programming.',
+      description: 'This video course contains a set of video lessons that helps novice developers to understand JavaScript from scratch. The Javascript EssentiaI course examines in detail variables, data types, conditional structures, logical operations, cyclic structures, the principles of creating and using functions, objects, and the basics of working with data arrays.',
       lessons: [
         'Introduction to JavaScript',
         'Logical structures',
@@ -43,7 +43,7 @@ export class CoursesService {
     {id: 3,
       name: 'JavaScript Advanced',
       // tslint:disable-next-line:max-line-length
-      description: 'You will learn how to work with objects, create constructor functions, work with the DOM tree of a page, and process events of document elements. This video course will help you to move to the new level of ownership of the most common scripting programming language.',
+      description: 'This course helps you to learn how to work with objects, create constructor functions, work with the DOM tree of a page, and process events of document elements. This video course helps you to move to the new level of ownership of the most common scripting programming language.',
       lessons: [
         'Constructors and prototypes',
         'Work with documents',
@@ -70,7 +70,7 @@ export class CoursesService {
     {id: 5,
       name: 'HTML5 & CSS3 Advanced',
       // tslint:disable-next-line:max-line-length
-      description: 'The course consists of 7 lessons, where students can familiarize themselves with the new features of HTML5 & CSS3. Students will consider the use of flexible layout, implementation of animation, use of browser vaults and multithreading, as well as connecting preprocessor and assembler to display the cross-browser of a web page on various devices.',
+      description: 'The course consists of 7 lessons, where students familiarize themselves with the new features of HTML5 & CSS3. Students will consider the use of flexible layout, implementation of animation, use of browser vaults and multithreading, as well as connecting preprocessors and assembler to display the cross-browser of a web page on various devices.',
       lessons: [
         'Introduction, microdata and user data. Geolocation',
         'Canvas',
@@ -83,7 +83,7 @@ export class CoursesService {
     {id: 6,
       name: 'TypeScript Fundamentals',
       // tslint:disable-next-line:max-line-length
-      description: 'You will learn how to work with objects, create constructor functions, work with the DOM tree of a page, and process events of document elements. This video course will help you to move to the new level of ownership of the most common scripting programming language.',
+      description: 'The Typescript Fundamentals video course helps learn everything you need to start using this programming language. Throughout these lessons, you learn how to use the tools for developing and compiling code and master the syntax constructs that are in TypeScript.',
     lessons: [
       'Variables and Functions',
       'Classes and Interfaces',
