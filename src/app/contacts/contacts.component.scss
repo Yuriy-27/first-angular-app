@@ -8,7 +8,7 @@
     overflow-y: auto;
     .title-content{
         font-size: $font-size-xxxl;
-        margin-top: 90px;
+        margin-top: 5.5rem;
         
         .title{
             font-weight: 800;
@@ -20,24 +20,24 @@
     }
     
     .line{
-        width: 40px;
-        height: 3px;
+        width: 2.5rem;
+        height: $line-height;
         background-color: $azure-radiance-color;
-        margin-bottom: 7px;
+        margin-bottom: .5rem;
     }
     
     .main-info{
         font-size: $font-size-xxl;
-        margin-top: 90px;
+        margin-top: 5.5rem;
        
         .main-content{
             padding: 0;
             .left, .right{
-                margin-bottom: 20px;
+                margin-bottom: 1.5rem;
                 padding: 0;
-                border: 2px solid $azure-radiance-color;
-                border-radius: 10px;
-                padding-top: 10px;
+                border: .1rem solid $azure-radiance-color;
+                border-radius: .5rem;
+                padding-top: .5rem;
                 color: $tundora-color;
                 font-weight: 500;
                 font-size: $font-size-xxl;

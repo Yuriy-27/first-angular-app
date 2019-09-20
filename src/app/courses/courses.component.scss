@@ -6,8 +6,8 @@
     overflow-y: auto;
     height: calc(100vh - #{$header-height});
     .line {
-        width: 40px;
-        height: 3px;
+        width: 2.6rem;
+        height: $line-height;
         background-color: $azure-radiance-color;
     }
     h1 {
@@ -20,15 +20,15 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        width: 200px;
-        height: 100px;
+        width: 13rem;
+        height: 7rem;
     }
     .description {
         text-align: justify;
     }
     .nav-btn{
-        border: 1px solid $azure-radiance-color;
-        border-radius: 5px;
+        border: .1rem solid $azure-radiance-color;
+        border-radius: .5rem;
         color: $azure-radiance-color;
         &:hover,
         &.active {
@@ -36,7 +36,6 @@
           color: $white-color;
         }
     }
-
 }
 
 .courses-details{
@@ -44,8 +43,6 @@
     height: calc(100vh - #{$header-height});
     overflow-y: auto;
 }
-
-
 
 .invisible {
     display: none;

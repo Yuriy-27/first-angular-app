@@ -9,10 +9,10 @@ import { ContactsInfo, ContactsService } from '../shared/services/contacts.servi
 export class ContactsComponent implements OnInit {
   contacts: ContactsInfo [];
 
-  constructor( private info: ContactsService) { }
+  constructor( private contactsService: ContactsService) { }
 
   ngOnInit() {
-    this.contacts = this.info.getAll();
+    this.contacts = this.contactsService.getAll();
   }
 
 }
