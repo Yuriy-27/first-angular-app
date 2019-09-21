@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MySkills, MySkillsService } from '../shared/services/my-skills.service';
+import { Skill, MySkillsService } from '../shared/services/my-skills.service';
 
 
 @Component({
@@ -8,12 +8,11 @@ import { MySkills, MySkillsService } from '../shared/services/my-skills.service'
   styleUrls: ['./my-skills.component.scss']
 })
 export class MySkillsComponent implements OnInit {
-  skills: MySkills [];
+  skills: Skill [];
 
   constructor( private mySkillsService: MySkillsService) { }
 
   ngOnInit() {
     this.skills = this.mySkillsService.getAll();
   }
-
 }

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-export interface MySkills {
+export interface Skill {
   title: string;
   result: string;
 }
@@ -9,7 +9,7 @@ export interface MySkills {
   providedIn: 'root'
 })
 export class MySkillsService {
-  private contactsInfo: MySkills [] = [
+  private contactsInfo: Skill [] = [
     {
         title: 'HTML5 & CSS3 Starter',
         result: '94%'
@@ -40,7 +40,7 @@ export class MySkillsService {
     }
   ];
 
-  getAll(): MySkills[] {
+  getAll(): Skill[] {
     return this.contactsInfo;
   }
 }
