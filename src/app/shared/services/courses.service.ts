@@ -55,7 +55,7 @@ export class CoursesService {
         'Cookies and data storage mechanisms on the client',
         'Work with graphics on the client side',
         'Ajax and work with HTTP protocols'],
-      img: '../assets/images/js_advanced.jpg'},
+      img: 'assets/images/js_advanced.jpg'},
     {id: 4,
       name: 'Bootstrap 4',
       // tslint:disable-next-line:max-line-length
