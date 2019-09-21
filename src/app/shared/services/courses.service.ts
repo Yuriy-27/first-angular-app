@@ -26,7 +26,7 @@ export class CoursesService {
         'HTML5 semantics. New tags. ',
         'Forms. Meta Tags.',
         'Page layout. Practice'],
-      img: '../assets/images/html5_css3_starter.png'},
+      img: 'assets/images/html5_css3_starter.png'},
     {id: 2,
       name: 'JavaScript Essential',
       // tslint:disable-next-line:max-line-length
@@ -39,7 +39,7 @@ export class CoursesService {
         'Objects',
         'Practice',
         'Practice'],
-      img: '../assets/images/js_essential.jpg'},
+      img: 'assets/images/js_essential.jpg'},
     {id: 3,
       name: 'JavaScript Advanced',
       // tslint:disable-next-line:max-line-length
@@ -66,7 +66,7 @@ export class CoursesService {
         'Bootstrap 4 Components',
         'JavaScript Bootstrap 4',
         'Utilities Bootstrap 4'],
-      img: '../assets/images/bootstrap4.png'},
+      img: 'assets/images/bootstrap4.png'},
     {id: 5,
       name: 'HTML5 & CSS3 Advanced',
       // tslint:disable-next-line:max-line-length
@@ -79,7 +79,7 @@ export class CoursesService {
         'Animations and gradients',
         'SASS basics',
         'Practice'],
-      img: '../assets/images/html5-css3-advanced.jpg'},
+      img: 'assets/images/html5-css3-advanced.jpg'},
     {id: 6,
       name: 'TypeScript Fundamentals',
       // tslint:disable-next-line:max-line-length
@@ -90,7 +90,7 @@ export class CoursesService {
       'Generics',
       'Modules and Namespaces',
       'Practice'],
-      img: '../assets/images/typescript.png'},
+      img: 'assets/images/typescript.png'},
     {id: 7,
       name: 'Angular Essential',
       // tslint:disable-next-line:max-line-length
@@ -103,7 +103,7 @@ export class CoursesService {
         'Routing',
         'Forms',
         'HTTP'],
-      img: '../assets/images/angular.png'},
+      img: 'assets/images/angular.png'},
     ];
 
   getAll(): Courses[] {
