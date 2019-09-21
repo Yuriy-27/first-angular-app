@@ -1,1 +1,25 @@
-<p>contacts works!</p>
+<div class="contacts-content container-fluid row justify-content-center">
+    <div class="title-content col-3 d-flex">
+        <div class="contacts-title">
+            <div class="line"></div>
+            <div class="title">
+                <p><span>My</span> Contact Details</p>
+            </div> 
+        </div>
+    </div>
+    <div class="main-info col-8">
+        <div *ngFor='let item of contacts' class="main-content col d-flex justify-content-between">
+            <div class="left col-3 d-flex">
+                <div class="icon col-2">
+                    <i [ngClass]="item.class"></i>
+                </div>
+                <div class="name col-10">
+                    <p>{{item.title}}</p>
+                </div>
+            </div>
+            <div class="right col-8">
+                {{item.content}}
+            </div>
+        </div>
+    </div>   
+</div>

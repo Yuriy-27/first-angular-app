@@ -2,21 +2,48 @@
 
 
 .courses-list{
-    background-color: azure;
+    background-color: $alto-color;
     overflow-y: auto;
     height: calc(100vh - #{$header-height});
-
+    .line {
+        width: 2.6rem;
+        height: $line-height;
+        background-color: $azure-radiance-color;
+    }
+    h1 {
+        font-size: $font-size-xxxl;
+        span {
+            font-weight: 800;
+        }
+    }
+    .image {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 13rem;
+        height: 7rem;
+    }
+    .description {
+        text-align: justify;
+    }
+    .nav-btn{
+        border: .1rem solid $azure-radiance-color;
+        border-radius: .5rem;
+        color: $azure-radiance-color;
+        &:hover,
+        &.active {
+          background-color: $azure-radiance-color;
+          color: $white-color;
+        }
+    }
 }
 
 .courses-details{
-    background-color: blanchedalmond;
+    background-color: $mercury-color;
     height: calc(100vh - #{$header-height});
     overflow-y: auto;
 }
 
-.flex__image {
-    background-size: contain;
-    background-position: center center;
-    width: 100px;
-    height: 50px;
+.invisible {
+    display: none;
 }

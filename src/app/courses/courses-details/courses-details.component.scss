@@ -1,0 +1,19 @@
+@import '../../../assets/styles/variables.scss';
+
+.title {
+    font-size: $font-size-xxxl;
+    font-weight: 600;
+}
+
+.description {
+    text-align: justify;
+}
+
+.lessons-number {
+    font-weight: 500;
+}
+
+.lesson-title {
+    border: .1rem solid $azure-radiance-color;
+    border-radius: .5rem; 
+}

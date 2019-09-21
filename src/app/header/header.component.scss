@@ -1,7 +1,7 @@
 @import "src/assets/styles/variables";
 
 .header-context {
-  padding: 24px;
+  padding: 1.3rem;
   background-color: $mine-shaft-color;
   height: $header-height;
   font-weight: 700;
@@ -12,7 +12,7 @@
   }
 
   .first {
-    margin-right: 10px;
+    margin-right: 1rem;
   }
 
   .menu {
@@ -20,25 +20,23 @@
   }
 
   .menu-button {
-    height: 32px;
+    height: 2rem;
 
     .btn {
-      height: 32px;
-      padding: 5px;
+      height: 2rem;
+      padding: .2rem;
 
       i {
-        width: 16px;
+        width: 1.5rem;
       }
     }
   }
 
   .links {
-    padding-top: 5px;
+    padding-top: .3rem;
   }
 
   .link {
     font-size: $font-size-regular;
   }
-
-
 }

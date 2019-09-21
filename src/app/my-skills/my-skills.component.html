@@ -1,1 +1,22 @@
-<p>my-skills works!</p>
+<div class="basic container-fluid">
+    <div class="row justify-content-center">
+        <div class="title col-2">
+            <div class="section-heading">
+                <div class="line"></div>
+                <h2>My <span>Skills</span></h2>
+            </div>
+        </div>     
+        <div class="skills col-9">
+            <div *ngFor='let item of skills'>
+                <div class="skill">
+                    <h3>{{item.title}}</h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" [ngStyle]="{'width': item.result}" aria-valuemin="0" aria-valuemax="100">
+                            <span>{{item.result}}</span>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>     
+</div>

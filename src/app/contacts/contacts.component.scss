@@ -1,0 +1,51 @@
+@import '../../assets/styles/variables.scss';
+
+
+.contacts-content{
+    background-color: $alto-color;
+    height: calc(100vh - #{$header-height});
+    margin: 0;
+    overflow-y: auto;
+    .title-content{
+        font-size: $font-size-xxxl;
+        margin-top: 5.5rem;
+        
+        .title{
+            font-weight: 800;
+            color: $tundora-color;
+            span{
+                font-weight: 400;
+            }
+        }
+    }
+    
+    .line{
+        width: 2.5rem;
+        height: $line-height;
+        background-color: $azure-radiance-color;
+        margin-bottom: .5rem;
+    }
+    
+    .main-info{
+        font-size: $font-size-xxl;
+        margin-top: 5.5rem;
+       
+        .main-content{
+            padding: 0;
+            .left, .right{
+                margin-bottom: 1.5rem;
+                padding: 0;
+                border: .1rem solid $azure-radiance-color;
+                border-radius: .5rem;
+                padding-top: .5rem;
+                color: $tundora-color;
+                font-weight: 500;
+                font-size: $font-size-xxl;
+            }
+            .right{
+                text-align: center;
+            } 
+        }  
+    }  
+}
+

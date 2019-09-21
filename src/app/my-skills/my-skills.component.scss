@@ -1,0 +1,64 @@
+@import '../../assets/styles/variables.scss';
+
+.basic {
+    height: calc(100vh - #{$header-height});
+    overflow-y: auto;
+    color: $tundora-color;
+    background-color: $alto-color;
+    .line{
+        width: 3rem;
+        height: $line-height;
+        background-color: $azure-radiance-color;
+        margin-bottom: .5rem;
+    }
+    .skills, .title{
+        margin-top: 5.5rem;
+    }
+    .skill h3{
+        font-size: $font-size-xxl
+
+    }
+    .section-heading{
+        h2{
+            font-size: $font-size-xxxl;
+            font-weight: 400;
+            letter-spacing: .2rem;
+        }
+        span{
+            font-weight: 800;
+        }
+    } 
+    .progress {
+        overflow: visible;
+        margin-bottom: 2rem;
+        height: .4rem;
+        .progress-bar {
+          background-color: $azure-radiance-color;
+          position: relative;
+          border-radius: .4rem;
+            span {
+                background-color: $azure-radiance-color;
+                position: absolute;
+                bottom: -1.2rem;
+                font-size: .7rem;
+                line-height: .6rem;
+                padding: .1rem .2rem .1rem .2rem;
+                right: -.8rem;
+                border-radius: .1rem;
+            }
+            span:after {
+            bottom: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-bottom-color: $azure-radiance-color;
+            border-width: .3rem;
+            margin-left: -.3rem;
+            }
+        }
+    }
+}
