@@ -12,12 +12,12 @@
 
   padding-left: 1.3rem;
   margin-bottom: .1rem;
-  color: $malibu-color;
+  color: $cerulean-color;
   font-size: $font-size-md;
 
   &:hover,
   &.active {
-    background-color: $azure-radiance-color;
+    background-color: $cerulean-color;
     color: $white-color;
   }
 }

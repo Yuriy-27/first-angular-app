@@ -22,7 +22,7 @@
     .line{
         width: 2.5rem;
         height: $line-height;
-        background-color: $azure-radiance-color;
+        background-color: $cerulean-color;
         margin-bottom: .5rem;
     }
     
@@ -35,7 +35,7 @@
             .left, .right{
                 margin-bottom: 1.5rem;
                 padding: 0;
-                border: .1rem solid $azure-radiance-color;
+                border: .1rem solid $cerulean-color;
                 border-radius: .5rem;
                 padding-top: .5rem;
                 color: $tundora-color;
