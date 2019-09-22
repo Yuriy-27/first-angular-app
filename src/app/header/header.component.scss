@@ -12,7 +12,7 @@
   }
 
   .first {
-    margin-right: 1rem;
+    margin-right: .5rem;
   }
 
   .menu {
@@ -25,7 +25,8 @@
     .btn {
       height: 2rem;
       padding: .2rem;
-
+      background-color: $cerulean-color;
+      
       i {
         width: 1.5rem;
       }
@@ -34,9 +35,15 @@
 
   .links {
     padding-top: .3rem;
+    .badge {
+      color: $cerulean-color;
+    }
   }
 
   .link {
     font-size: $font-size-regular;
+  }
+  .active {
+    background-color: $cerulean-color;
   }
 }

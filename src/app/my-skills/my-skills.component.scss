@@ -8,7 +8,7 @@
     .line{
         width: 3rem;
         height: $line-height;
-        background-color: $azure-radiance-color;
+        background-color: $cerulean-color;
         margin-bottom: .5rem;
     }
     .skills, .title{
@@ -33,11 +33,11 @@
         margin-bottom: 2rem;
         height: .4rem;
         .progress-bar {
-          background-color: $azure-radiance-color;
+          background-color: $cerulean-color;
           position: relative;
           border-radius: .4rem;
             span {
-                background-color: $azure-radiance-color;
+                background-color: $cerulean-color;
                 position: absolute;
                 bottom: -1.2rem;
                 font-size: .7rem;
@@ -55,7 +55,7 @@
             width: 0;
             position: absolute;
             pointer-events: none;
-            border-bottom-color: $azure-radiance-color;
+            border-bottom-color: $cerulean-color;
             border-width: .3rem;
             margin-left: -.3rem;
             }
