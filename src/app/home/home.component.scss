@@ -3,7 +3,7 @@
 .home-context {
   height: calc(100vh - #{$header-height});
   overflow-y: auto;
-  background-color: $alto-color;
+  background-color: $alabaster-color;
 
   .home-photo {
     height: 31rem;
@@ -20,7 +20,7 @@
     .line {
       width: 5rem;
       height: $line-height;
-      background-color: $cerulean-color;
+      background-color: $cutty-sark-color;
     }
 
     .title {
@@ -30,6 +30,7 @@
 
       span {
         font-weight: 800;
+        color: $cutty-sark-color;
       }
     }
 
@@ -37,6 +38,7 @@
       font-weight: 800;
       font-size: $font-size-xxxl;
       margin-bottom: 1rem;
+      color: $cutty-sark-color;
       span {
         font-weight: 400;
       }

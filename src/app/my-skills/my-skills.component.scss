@@ -4,11 +4,11 @@
     height: calc(100vh - #{$header-height});
     overflow-y: auto;
     color: $tundora-color;
-    background-color: $alto-color;
+    background-color: $alabaster-color;
     .line{
         width: 3rem;
         height: $line-height;
-        background-color: $cerulean-color;
+        background-color: $cutty-sark-color;
         margin-bottom: .5rem;
     }
     .skills, .title{
@@ -26,6 +26,7 @@
         }
         span{
             font-weight: 800;
+            color: $cutty-sark-color;
         }
     } 
     .progress {
@@ -33,11 +34,11 @@
         margin-bottom: 2rem;
         height: .4rem;
         .progress-bar {
-          background-color: $cerulean-color;
+          background-color: $mantle-color;
           position: relative;
           border-radius: .4rem;
             span {
-                background-color: $cerulean-color;
+                background-color: $cutty-sark-color;
                 position: absolute;
                 bottom: -1.2rem;
                 font-size: .7rem;
@@ -45,6 +46,7 @@
                 padding: .1rem .2rem .1rem .2rem;
                 right: -.8rem;
                 border-radius: .1rem;
+                color: $parchment-color;
             }
             span:after {
             bottom: 100%;
@@ -55,7 +57,7 @@
             width: 0;
             position: absolute;
             pointer-events: none;
-            border-bottom-color: $cerulean-color;
+            border-bottom-color: $cutty-sark-color;
             border-width: .3rem;
             margin-left: -.3rem;
             }

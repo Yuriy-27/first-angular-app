@@ -1,14 +1,14 @@
 @import "src/assets/styles/variables";
 
-footer {
-  background-color: $tundora-color;
+.footer {
+  background-color: $cutty-sark-color;
   height: $footer-height;
 
   p {
     margin: 0;
     font-size: $font-size-sm;
     text-align: center;
-    color: $alto-color;
+    color: $parchment-color;
   }
 
   .links {
@@ -17,14 +17,18 @@ footer {
     text-align: center;
     justify-content: space-between;
     height: 2rem;
+    padding-left: auto;
+    padding-right: auto;
     padding: 1.8rem;
+    padding-top: 1rem;
+    
 
     i {
       font-size: $font-size-md;
-      color: $cerulean-color;
+      color: $parchment-color;
 
       &:hover {
-        color: $cerulean-color;
+        color: $mantle-color;
       }
     }
   }
