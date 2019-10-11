@@ -1,1 +1,50 @@
-<p>login works!</p>
+<div class="container">
+    <form novalidate [formGroup]="loginForm" (ngSubmit)="login()">
+        <fieldset formGroupName="name">
+
+            <div class="form-group has-danger">
+                <label>First Name</label>
+                <input type="text" class="form-control" formControlName="firstName" [ngClass]="{
+                    'is-invalid': firstName.invalid && firstName.dirty,
+                    'is-valid': firstName.valid && firstName.dirty }">
+                <div class="alert alert-danger" *ngIf="firstName.invalid && firstName.dirty">
+                    Required field
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" class="form-control" formControlName="lastName" [ngClass]="{
+                    'is-invalid': lastName.invalid && lastName.dirty,
+                    'is-valid': lastName.valid && lastName.dirty }">
+                <div class="alert alert-danger" *ngIf="lastName.invalid && lastName.dirty">
+                    Required field
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" formControlName="email" [ngClass]="{
+                'is-invalid': email.invalid && email.dirty,
+                'is-valid': email.valid && email.dirty }">
+            <div class="alert alert-danger" *ngIf="email.errors && (email.dirty || email.touched)">
+                <p *ngIf="email.errors.required">Required field</p>
+                <p *ngIf="email.errors.pattern">Wrong format</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="">Password</label>
+            <input type="password" class="form-control" formControlName="password" [ngClass]="{
+                'is-invalid': password.invalid && password.dirty,
+                'is-valid': password.valid && password.dirty }">
+            <div class="alert alert-danger" *ngIf="password.errors && (password.dirty || password.touched)">
+                <p *ngIf="password.errors.required">Required field</p>
+                <p *ngIf="password.errors.minlength">Password's minimum length
+                    {{password.errors.minlength.requiredLength}}</p>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" value="Login">Login</button>
+    </form>
+</div>
