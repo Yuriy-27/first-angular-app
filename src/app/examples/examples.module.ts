@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ExamplesComponent } from './examples.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 const routes: Routes = [
   {path: '', component: ExamplesComponent}
@@ -12,6 +13,7 @@ const routes: Routes = [
   declarations: [ExamplesComponent],
   imports: [
     CommonModule,
+    CarouselModule.forRoot(),
     RouterModule.forChild(routes)
   ]
 })
