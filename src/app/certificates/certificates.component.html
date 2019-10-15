@@ -1,0 +1,15 @@
+<div class="container certificates-content d-flex justify-content-between">
+    <div class="title-content col-3">
+        <div class="line"></div>
+        <h1 class="title">My <b>Certificates</b></h1>
+        <p>Here you can see the certificates I received during the course "Frontend developer" at CyberBionic
+            Systematics training center.</p>
+    </div>
+    <div class="carousel col-9">
+        <carousel>
+            <slide *ngFor='let item of certificates'>
+                <img src="{{item.imgUrl}}" alt="{{item.id}}">
+            </slide>
+        </carousel>
+    </div>
+</div>
