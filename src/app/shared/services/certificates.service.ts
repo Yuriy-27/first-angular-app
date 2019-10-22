@@ -40,7 +40,7 @@ export class CertificatesService {
             imgUrl: 'assets/images/Certificates/angular.jpg'
         },
         {
-            id: 1,
+            id: 8,
             imgUrl: 'assets/images/Certificates/diploma.jpg'
         }
     ];
