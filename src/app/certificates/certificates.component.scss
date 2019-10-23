@@ -34,11 +34,13 @@
     width: 100%;
   }
 
-  ::ng-deep span {
-    background-color: $mantle-color;
-    height: 15px;
-  }
-  ::ng-deep li {
-    background-color: $pickled-bluewood-color;
+  ::ng-deep {
+    li {
+      background-color: $pickled-bluewood-color;
+    }
+    span {
+      background-color: $mantle-color;
+      height: 1rem;
+    }
   }
 }
