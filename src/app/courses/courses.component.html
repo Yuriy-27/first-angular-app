@@ -4,7 +4,7 @@
             <div class="line mt-3 mb-2"></div>
             <h1>My <span>Courses</span></h1>
             <div *ngFor="let item of coursesList">
-                <div class="media" >
+                <div class="media d-flex">
                     <div class='image mt-3 mr-3' [style.background-image]="'url(' + item.img + ')'"></div>
                     <div class="media-body mt-3">
                         <h5 class="mt-0">{{item.name}}</h5>

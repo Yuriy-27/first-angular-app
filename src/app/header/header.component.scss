@@ -12,7 +12,7 @@
   }
 
   .first {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 
   .menu-button {
@@ -20,10 +20,10 @@
 
     .btn {
       height: 2rem;
-      padding: .2rem;
+      padding: 0.2rem;
       background-color: $cutty-sark-color;
-      color:$parchment-color;
-      
+      color: $parchment-color;
+
       i {
         width: 1.5rem;
         color: $parchment-color;
@@ -35,11 +35,11 @@
         background-color: $mantle-color;
         color: $parchment-color;
       }
-    }  
+    }
   }
 
   .links {
-    padding-top: .3rem;
+    padding-top: 0.3rem;
     display: none;
     .badge {
       color: $parchment-color;

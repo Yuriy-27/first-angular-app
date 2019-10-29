@@ -11,23 +11,8 @@
       <div class="links col">
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a href="https://www.linkedin.com/in/yuriyshchebetun/" class="badge">
-              <i class="link fab fa-linkedin-in"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://github.com/Yuriy-27" class="badge">
-              <i class="link fab fa-github"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://t.me/YuriyShchebetun" class="badge">
-              <i class="link fab fa-telegram-plane"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="skype:yuriyshchebetun?userinfo" class="badge">
-              <i class="link fab fa-skype"></i>
+            <a *ngFor="let item of links" href="{{item.link}}" class="badge">
+              <i [ngClass]="item.iconClass"></i>
             </a>
           </li>
         </ul>
@@ -37,15 +22,8 @@
           <i class="fas fa-bars"></i> <span class="caret"></span>
         </button>
         <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
-          <li role="menuitem">
-            <a class="dropdown-item" routerLink="/home" routerLinkActive='active'>Home</a>
-          </li>
-          <li role="menuitem"><a class="dropdown-item" routerLink="/skills" routerLinkActive='active'>Skills</a></li>
-          <li role="menuitem"><a class="dropdown-item" routerLink="/courses" routerLinkActive='active'>Education</a>
-          </li>
-          <li role="menuitem"><a class="dropdown-item" routerLink="/certificates" routerLinkActive='active'>Examples</a>
-          </li>
-          <li role="menuitem"><a class="dropdown-item" routerLink="/contacts" routerLinkActive='active'>Contacts</a>
+          <li *ngFor="let item of routerLinks" role="menuitem">
+            <a class="dropdown-item" routerLink="{{item.path}}" routerLinkActive='active'>{{item.title}}</a>
           </li>
         </ul>
       </div>
