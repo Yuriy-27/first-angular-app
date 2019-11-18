@@ -4,15 +4,26 @@
   background-color: $alabaster-color;
   height: 100vh;
   padding: 0;
+  overflow-y: auto;
+  
   .form-content {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    $login-height: 43rem;
+    height: $login-height;
+    top: calc((100% - #{$login-height}) / 2);
     border: 1px solid $pickled-bluewood-color;
     border-radius: 1rem;
     box-shadow: 0 0 .5rem .2rem $cutty-sark-color;
     label {
       color: $cutty-sark-color;
     }
+    @media (max-height: 650px) {
+      top: 30px;
+      width: 550px;
+    }
+    
     .title {
       padding-top: 1rem;
       padding-bottom: 1rem;
@@ -20,6 +31,17 @@
       color: $cutty-sark-color;
       font-weight: 800;
       font-size: $font-size-xxxl;
+    }
+    form {
+      height: 30rem;
+      outline: 1px solid red;
+      .form-fields {
+        margin: 0;
+        .error-message {
+          margin: 0;
+          padding: 0 !important;
+        }
+      }
     }
     .form-control {
       border-radius: 0.5rem;
