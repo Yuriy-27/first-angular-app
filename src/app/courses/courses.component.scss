@@ -2,13 +2,13 @@
 
 
 .courses-list{
-    background-color: $alto-color;
+    background-color: $alabaster-color;
     overflow-y: auto;
     height: calc(100vh - #{$header-height});
     .line {
         width: 2.6rem;
         height: $line-height;
-        background-color: $cerulean-color;
+        background-color: $cutty-sark-color;
     }
     h1 {
         font-size: $font-size-xxxl;
@@ -26,14 +26,14 @@
     .description {
         text-align: justify;
     }
-    .nav-btn{
-        border: .1rem solid $cerulean-color;
+    .btn{
+        border: .1rem solid $cutty-sark-color;
         border-radius: .5rem;
-        color: $cerulean-color;
+        color: $cutty-sark-color;
         &:hover,
         &.active {
-          background-color: $cerulean-color;
-          color: $white-color;
+          background-color: $mantle-color;
+          color: $parchment-color;
         }
     }
 }

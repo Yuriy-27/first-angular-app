@@ -1,1 +1,60 @@
-<p>login works!</p>
+<div class="main container-fluid">
+    <div class="form-content col-3 align-items-center">
+        <div class="title">
+            Sign In
+        </div>
+        <form novalidate [formGroup]="loginForm" (ngSubmit)="login()" class="d-flex flex-column">
+
+            <div class="d-flex flex-wrap">
+                <div class="form-fields form-group col-12">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" formControlName="firstName" [ngClass]="{
+                        'is-invalid': loginForm.controls.firstName.invalid && loginForm.controls.firstName.dirty,
+                        'is-valid': loginForm.controls.firstName.valid && loginForm.controls.firstName.dirty}">
+                    <div class="error-massage alert alert-danger" *ngIf="loginForm.controls.firstName.invalid && (loginForm.controls.firstName.touched || loginForm.controls.firstName.dirty)">
+                        {{getFirstNameErrors()}}
+                    </div>
+                </div>
+    
+                <div class="form-fields form-group col-12">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" formControlName="lastName" [ngClass]="{
+                                    'is-invalid': loginForm.controls.lastName.invalid && loginForm.controls.lastName.dirty,
+                                    'is-valid': loginForm.controls.lastName.valid && loginForm.controls.lastName.dirty }">
+                    <div class="error-massage alert alert-danger" *ngIf="loginForm.controls.lastName.invalid && (loginForm.controls.lastName.touched || loginForm.controls.lastName.dirty)">
+                       {{getLastNameErrors()}}
+                    </div>
+                </div>
+    
+                <div class="form-fields form-group col-12">
+                    <label>Email</label>
+                    <input type="email" class="form-control" formControlName="email" [ngClass]="{
+                                'is-invalid': loginForm.controls.email.invalid && loginForm.controls.email.dirty,
+                                'is-valid': loginForm.controls.email.valid && loginForm.controls.email.dirty }">
+                    <div class="error-massage alert alert-danger" *ngIf="loginForm.controls.email.errors && (loginForm.controls.email.dirty || loginForm.controls.email.touched)">
+                        {{getEmailErrors()}}
+                    </div>
+                </div>
+    
+                <div class="form-fields form-group col-12">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" formControlName="password" [ngClass]="{
+                                'is-invalid': loginForm.controls.password.invalid && loginForm.controls.password.dirty,
+                                'is-valid': loginForm.controls.password.valid && loginForm.controls.password.dirty }">
+                    <div class="error-massage alert alert-danger" *ngIf="loginForm.controls.password.errors && (loginForm.controls.password.dirty || loginForm.controls.password.touched)">
+                        {{getPasswordErrors()}}
+                    </div>
+                </div>
+            </div>
+            <div class="buttons col-12 d-flex justify-content-around align-self-end">
+                <div class="button-login col">
+                    <button type="submit" class="btn btn-outline-primary btn-block"
+                        [ngClass]="{'disabled': !loginForm.valid}" (click)="login()">Login</button>
+                </div>
+                <div class="button-reset col">
+                    <button class='btn btn-outline-danger btn-block' (click)='loginForm.reset()'>Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

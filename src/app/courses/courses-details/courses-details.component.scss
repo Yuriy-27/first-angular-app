@@ -3,6 +3,7 @@
 .title {
     font-size: $font-size-xxxl;
     font-weight: 600;
+    color: $cutty-sark-color;
 }
 
 .description {
@@ -14,6 +15,6 @@
 }
 
 .lesson-title {
-    border: .1rem solid $cerulean-color;
+    border: .1rem solid $cutty-sark-color;
     border-radius: .5rem; 
 }

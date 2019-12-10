@@ -2,21 +2,17 @@
 
 .header-context {
   padding: 1.3rem;
-  background-color: $mine-shaft-color;
+  background-color: $pickled-bluewood-color;
   height: $header-height;
   font-weight: 700;
 
   .ng {
-    color: $alto-color;
+    color: $parchment-color;
     font-size: $font-size-xl;
   }
 
   .first {
-    margin-right: .5rem;
-  }
-
-  .menu {
-    color: #ddd;
+    margin-right: 0.5rem;
   }
 
   .menu-button {
@@ -24,26 +20,40 @@
 
     .btn {
       height: 2rem;
-      padding: .2rem;
-      background-color: $cerulean-color;
-      
+      padding: 0.2rem;
+      background-color: $cutty-sark-color;
+      color: $parchment-color;
+
       i {
         width: 1.5rem;
+        color: $parchment-color;
+      }
+    }
+    .dropdown-item {
+      color: $pickled-bluewood-color;
+      &:hover {
+        background-color: $mantle-color;
+        color: $parchment-color;
       }
     }
   }
 
   .links {
-    padding-top: .3rem;
+    padding-top: 0.3rem;
+    display: none;
     .badge {
-      color: $cerulean-color;
+      color: $parchment-color;
     }
   }
 
   .link {
     font-size: $font-size-regular;
+    &:hover {
+      color: $mantle-color;
+    }
   }
   .active {
-    background-color: $cerulean-color;
+    background-color: $mantle-color;
+    color: $parchment-color;
   }
 }

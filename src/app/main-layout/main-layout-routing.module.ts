@@ -11,7 +11,7 @@ const routes: Routes = [
       {path: 'home', component: HomeComponent},
       {path: 'skills', loadChildren: 'src/app/my-skills/my-skills.module#MySkillsModule'},
       {path: 'courses', loadChildren: 'src/app/courses/courses.module#CoursesModule'},
-      {path: 'examples', loadChildren: 'src/app/examples/examples.module#ExamplesModule'},
+      {path: 'certificates', loadChildren: 'src/app/certificates/certificates.module#CertificatesModule'},
       {path: 'contacts', loadChildren: 'src/app/contacts/contacts.module#ContactsModule'}
     ]
   },

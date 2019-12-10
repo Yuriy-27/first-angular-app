@@ -2,7 +2,7 @@
 
 
 .contacts-content{
-    background-color: $alto-color;
+    background-color: $alabaster-color;
     height: calc(100vh - #{$header-height});
     margin: 0;
     overflow-y: auto;
@@ -12,7 +12,7 @@
         
         .title{
             font-weight: 800;
-            color: $tundora-color;
+            color: $cutty-sark-color;
             span{
                 font-weight: 400;
             }
@@ -22,7 +22,7 @@
     .line{
         width: 2.5rem;
         height: $line-height;
-        background-color: $cerulean-color;
+        background-color: $cutty-sark-color;
         margin-bottom: .5rem;
     }
     
@@ -35,10 +35,10 @@
             .left, .right{
                 margin-bottom: 1.5rem;
                 padding: 0;
-                border: .1rem solid $cerulean-color;
+                border: .1rem solid $mantle-color;
                 border-radius: .5rem;
                 padding-top: .5rem;
-                color: $tundora-color;
+                color: $cutty-sark-color;
                 font-weight: 500;
                 font-size: $font-size-xxl;
             }
