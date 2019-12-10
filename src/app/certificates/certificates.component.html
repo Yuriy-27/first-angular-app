@@ -1,15 +1,92 @@
-<div class="container certificates-content d-flex justify-content-between">
-    <div class="title-content col-3">
-        <div class="line"></div>
-        <h1 class="title">My <b>Certificates</b></h1>
-        <p>Here you can see the certificates I received during the course "Frontend developer" at CyberBionic
-            Systematics training center.</p>
+<div class="container-fluid wrapper">
+    <div class="main-container container d-flex justify-content-between">
+        <div class="nav-panel col-2 d-flex flex-wrap">
+            <div class="top col-12 d-flex justify-content-center align-items-center">
+                <div class="arrow_up d-flex" (click)="changeCertificate(-1)" [ngClass]="{'d-none': currentCertificate === certificates[0],
+                                'd-flex': currentCertificate != certificates[0]}">
+                    <i class="arrow fas fa-arrow-up"></i>
+                </div>
+            </div>
+            <div class="center col-12 d-flex flex-column justify-content-center align-items-center">
+                <div class="circle" [ngClass]="{'current': currentCertificate.id === 1}"></div>
+                <div class="circle" [ngClass]="{'current': currentCertificate.id === 2}"></div>
+                <div class="circle" [ngClass]="{'current': currentCertificate.id === 3}"></div>
+                <div class="circle" [ngClass]="{'current': currentCertificate.id === 4}"></div>
+                <div class="circle" [ngClass]="{'current': currentCertificate.id === 5}"></div>
+                <div class="circle" [ngClass]="{'current': currentCertificate.id === 6}"></div>
+                <div class="circle" [ngClass]="{'current': currentCertificate.id === 7}"></div>
+                <div class="circle" [ngClass]="{'current': currentCertificate.id === 8}"></div>
+            </div>
+            <div class="bottom col-12 d-flex justify-content-center align-items-center">
+                <div class="arrow d-flex" (click)="changeCertificate(+1)" [ngClass]="{'d-none': currentCertificate === certificates[certificates.length - 1],
+                                'd-flex': currentCertificate != certificates[certificates.length - 1]}">
+                    <i class="arrow-up fas fa-arrow-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="certificates_content col-10 d-flex flex-wrap">
+            <!-- <div class="certificates_title col-12 d-flex align-items-center">
+                <h1>{{currentCertificate.title}}</h1>
+            </div> -->
+            <div class="certificates_img col-12">
+                <ng-container [ngSwitch]="currentCertificate.id">
+                    <div *ngSwitchCase="1">
+                        <img src="{{currentCertificate.image}}" alt="">
+                    </div>
+                    <div *ngSwitchCase="2">
+                        <img src="{{currentCertificate.image}}" alt="">
+                    </div>
+                    <div *ngSwitchCase="3">
+                        <img src="{{currentCertificate.image}}" alt="">
+                    </div>
+                    <div *ngSwitchCase="4">
+                        <img src="{{currentCertificate.image}}" alt="">
+                    </div>
+                    <div *ngSwitchCase="5">
+                        <img src="{{currentCertificate.image}}" alt="">
+                    </div>
+                    <div *ngSwitchCase="6">
+                        <img src="{{currentCertificate.image}}" alt="">
+                    </div>
+                    <div *ngSwitchCase="7">
+                        <img src="{{currentCertificate.image}}" alt="">
+                    </div>
+                    <div *ngSwitchCase="8">
+                        <img src="{{currentCertificate.image}}" alt="">
+                    </div>
+                </ng-container>
+            </div>
+        </div>
     </div>
-    <div class="carousel col-9">
-        <carousel>
-            <slide *ngFor='let item of certificates'>
-                <img src="{{item.imgUrl}}" alt="{{item.id}}">
-            </slide>
-        </carousel>
-    </div>
+
+    <!-- <div class="test">
+        <ng-container [ngSwitch]="currentCertificate.id">
+            <div *ngSwitchCase="1">
+                <img src="{{currentCertificate.image}}" alt="">
+            </div>
+            <div *ngSwitchCase="2">
+                <img src="{{currentCertificate.image}}" alt="">
+            </div>
+            <div *ngSwitchCase="3">
+                <img src="{{currentCertificate.image}}" alt="">
+            </div>
+            <div *ngSwitchCase="4">
+                <img src="{{currentCertificate.image}}" alt="">
+            </div>
+            <div *ngSwitchCase="5">
+                <img src="{{currentCertificate.image}}" alt="">
+            </div>
+            <div *ngSwitchCase="6">
+                <img src="{{currentCertificate.image}}" alt="">
+            </div>
+            <div *ngSwitchCase="7">
+                <img src="{{currentCertificate.image}}" alt="">
+            </div>
+            <div *ngSwitchCase="8">
+                <img src="{{currentCertificate.image}}" alt="">
+            </div>
+        </ng-container>
+        
+    </div> -->
+
 </div>

@@ -5,16 +5,14 @@
   background-color: $cutty-sark-color;
   height: calc(100vh - #{$header-height} - #{$footer-height});
   overflow-y: auto;
-
 }
 
 .nav li a {
-
   padding-left: 1.3rem;
   margin-bottom: .1rem;
   color: $parchment-color;
   font-size: $font-size-md;
-
+  transition: background-color .1s linear, font-weight .1s linear;
   &:hover,
   &.active {
     background-color: $mantle-color;

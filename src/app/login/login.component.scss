@@ -6,13 +6,13 @@
   padding: 0;
   overflow-y: auto;
   
-  .form-content {
-    height: 100%;
+  .form-container {
+    padding: 1rem;
     margin-left: auto;
     margin-right: auto;
-    $login-height: 43rem;
-    height: $login-height;
-    top: calc((100% - #{$login-height}) / 2);
+    $form-height: 43rem;
+    max-height: $form-height;
+    top: calc((100% - #{$form-height}) / 2);
     border: 1px solid $pickled-bluewood-color;
     border-radius: 1rem;
     box-shadow: 0 0 .5rem .2rem $cutty-sark-color;
@@ -25,6 +25,7 @@
     }
     
     .title {
+      height: 4rem;
       padding-top: 1rem;
       padding-bottom: 1rem;
       text-align: center;
@@ -32,9 +33,13 @@
       font-weight: 800;
       font-size: $font-size-xxxl;
     }
-    form {
-      height: 30rem;
-      outline: 1px solid red;
+
+    .form-content {
+      padding: 0;
+      min-height: 20rem;
+      max-height: 35rem;
+    }
+   
       .form-fields {
         margin: 0;
         .error-message {
@@ -42,15 +47,13 @@
           padding: 0 !important;
         }
       }
-    }
+    
     .form-control {
       border-radius: 0.5rem;
     }
-    .btn-block {
-      border-radius: 0.5rem;
-    }
-    .alert p {
-      margin: 0;
+
+    .buttons {
+      height: 4rem;
     }
   }
 }
