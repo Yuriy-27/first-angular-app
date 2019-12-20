@@ -31,18 +31,17 @@ export class CertificatesComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.certificates = this.certificatesService.getAll();
   }
 
-  changeCertificate(param) {
+  changeCertificate(nextStep: number) {
     const index = this.certificates.findIndex(step => step === this.currentCertificate);
     if (this.currentCertificate != null && this.currentCertificate !== undefined) {
-      this.currentCertificate = this.certificates[index + param];
+      this.currentCertificate = this.certificates[index + nextStep];
     }
-    if (param === -1 && index === 0) {
+    if (nextStep === -1 && index === 0) {
       this.currentCertificate = this.certificates[0];
     }
-    if (param === +1 && index === this.certificates.length - 1) {
+    if (nextStep === +1 && index === this.certificates.length - 1) {
       this.currentCertificate = this.certificates[this.certificates.length - 1];
     }
   }
